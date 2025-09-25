@@ -12,6 +12,8 @@
 It uses **SeleniumLibrary**, Python, and resource files to interact with the [React Admin Demo site](https://marmelab.com/react-admin-demo/).  
 If the site is down, you can use the **forked version** available in my repositories.
 
+**Instructor:** Mr. Julius Libao
+
 ---
 
 ## 🎯 Overview
@@ -30,7 +32,7 @@ It’s structured like a real-world UI automation project but simplified for tra
 ## 📂 Folder Structure
 
 ```text
-.                  # Virtual environment
+.
 ├─ Library/
 │  ├─ GetUsersInJSON.py      # Custom Python keywords
 │  └─ locators.py            # Centralized locators
@@ -55,12 +57,14 @@ It’s structured like a real-world UI automation project but simplified for tra
 
 ```bash
 # macOS / Linux
+cd ./project_path
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
 ```powershell
 # Windows (PowerShell)
+cd ./project_path
 python -m venv .venv
 .\\.venv\\Scripts\\Activate.ps1
 ```
