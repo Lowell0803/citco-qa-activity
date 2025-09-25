@@ -1,0 +1,72 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+pip-wheel-metadata/
+
+# pip / installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test outputs & Robot Framework results
+Results/
+*.log
+*.output
+*.report
+*.xunit.xml
+*.png
+*.html
+
+# Coverage
+.coverage
+htmlcov/
+
+# Pytest / caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDEs / editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets / env
+.env
+.env.*
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# Logs
+*.log
+
+# Misc
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
