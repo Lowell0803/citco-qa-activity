@@ -101,11 +101,19 @@ Fill Customer Form From Edit With Clear
     Input Text    ${STATE_FIELD}    ${STATE}
     Clear Field Robust    ${ZIP_FIELD}
     Input Text    ${ZIP_FIELD}    ${ZIPCODE}
+    # Use this:
     Clear Field Robust    ${PASSWORD_FIELD}
+    Clear Field Robust    ${CONFIRM_FIELD}
+    Sleep    1s
     Input Text    ${PASSWORD_FIELD}    ${PASSWORD}
     Sleep    0.5s
-    Clear Field Robust    ${CONFIRM_FIELD}
     Input Text    ${CONFIRM_FIELD}    ${CONFIRM_PASSWORD}
+    Sleep    0.5s
+    # Verify they match
+    ${pwd_check}=    Get Value    ${PASSWORD_FIELD}
+    ${conf_check}=    Get Value    ${CONFIRM_FIELD}
+    Run Keyword If    '${pwd_check}' != '${PASSWORD}'    Input Text    ${PASSWORD_FIELD}    ${PASSWORD}
+    Run Keyword If    '${conf_check}' != '${PASSWORD}'    Input Text    ${CONFIRM_FIELD}    ${PASSWORD}
     Input Text    ${BIRTHDAY_FIELD}    ${BIRTHDAY}
     Wait Until Element Is Enabled    ${SUBMIT_BUTTON}
     Click Button    ${SUBMIT_BUTTON}

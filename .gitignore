@@ -24,12 +24,8 @@ pip-delete-this-directory.txt
 
 # Test outputs & Robot Framework results
 Results/
-*.log
-*.output
-*.report
 *.xunit.xml
 *.png
-*.html
 
 # Coverage
 .coverage
